@@ -12,8 +12,8 @@
                         <tbody>
                         <tr class="product-shop-row first odd">
                             <th>&nbsp;</th>
-                            <td><a href="#" class="btn btn-cancel icon-remove" title="Remove This Item"></a> <a class="product-image" href="product_detail.html" title="Azrouel Dress"><img src="{{ asset('uploads/products-images/product1.jpg') }}" alt="Azrouel Dress" width="200"></a>
-                                <h2 class="product-name"><a href="product_detail.html" title="Azrouel Dress">Sample Product</a></h2>
+                            <td><a href="#" class="btn btn-cancel icon-remove" title="Remove This Item"></a> <a class="product-image" href="{{ url('product/detail' , [rand(1,20)]) }}" title="Azrouel Dress"><img src="{{ asset('uploads/products-images/product1.jpg') }}" alt="Azrouel Dress" width="200"></a>
+                                <h2 class="product-name"><a href="{{ url('product/detail' , [rand(1,20)]) }}" title="Azrouel Dress">Sample Product</a></h2>
                                 <div class="price-box">
                                     <p class="special-price"> <span class="price"> $45.00 </span> </p>
                                     <p class="old-price"> <span class="price-sep">-</span> <span class="price"> $50.00 </span> </p>
@@ -22,8 +22,8 @@
                                     <button type="button" title="Add to Cart" class="button"><span><span>Add to Cart</span></span></button>
                                 </p>
                                 <a href="#" class="button wishlist">Add to Wishlist</a></td>
-                            <td><a href="#" class="btn btn-cancel icon-remove" title="Remove This Item"></a><a class="product-image" href="product_detail.html" title="Blue Lagoon polka-dot chiffon and lace thong"><img src="{{ asset('uploads/products-images/product2.jpg') }}" alt="Azrouel Dress" width="200"></a>
-                                <h2 class="product-name"><a href="product_detail.html" title="Azrouel Dress">Sample Product</a></h2>
+                            <td><a href="#" class="btn btn-cancel icon-remove" title="Remove This Item"></a><a class="product-image" href="{{ url('product/detail' , [rand(1,20)]) }}" title="Blue Lagoon polka-dot chiffon and lace thong"><img src="{{ asset('uploads/products-images/product2.jpg') }}" alt="Azrouel Dress" width="200"></a>
+                                <h2 class="product-name"><a href="{{ url('product/detail' , [rand(1,20)]) }}" title="Azrouel Dress">Sample Product</a></h2>
                                 <div class="price-box"> <span class="regular-price"> <span class="price">$50.00</span> </span> </div>
                                 <p>
                                     <button type="button" title="Add to Cart" class="button"><span><span>Add to Cart</span></span></button>

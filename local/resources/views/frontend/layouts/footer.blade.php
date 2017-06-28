@@ -66,7 +66,7 @@
                 <div class="col-md-2 col-sm-6 col-xs-12">
                     <h4 class="yellow">Style Advisor</h4>
                     <ul class="links">
-                        <li class="first"><a title="Your Account" href="login.html">Your Account</a></li>
+                        <li class="first"><a title="Your Account" href="{{ url('/login') }}">Your Account</a></li>
                         <li><a title="Information" href="#">Information</a></li>
                         <li><a title="Addresses" href="#">Addresses</a></li>
                         <li><a title="Addresses" href="#">Discount</a></li>

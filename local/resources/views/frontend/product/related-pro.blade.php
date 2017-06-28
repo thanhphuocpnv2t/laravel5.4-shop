@@ -8,13 +8,13 @@
                 <div class="item">
                     <div class="item-inner">
                         <div class="product-block">
-                            <div class="product-image"> <a href="product_detail.html">
+                            <div class="product-image"> <a href="{{ url('product/detail' , [rand(1,20)]) }}">
                                     <figure class="product-display">
                                         <div class="sale-label sale-top-left">Sale</div>
                                         <img src="{{ asset('uploads/products-images/product1.jpg') }}" class="lazyOwl product-mainpic" alt="product-image" style="display: block;"> <img class="product-secondpic" alt="product-image" src="{{ asset('uploads/products-images/product1.jpg') }}"> </figure>
                                 </a> </div>
                             <div class="product-meta">
-                                <div class="product-action"> <a class="addcart" href="shopping_cart.html"> <i class="icon-shopping-cart">&nbsp;</i> Add to cart </a> <a class="wishlist" href="wishlist.html"> <i class="icon-heart">&nbsp;</i> </a> <a href="quick_view.html" class="quickview"> <i class="icon-zoom">&nbsp;</i> </a> </div>
+                                <div class="product-action"> <a class="addcart" href="shopping_cart.html"> <i class="icon-shopping-cart">&nbsp;</i> Add to cart </a> <a class="wishlist" href="{{ url('/user/wishlist') }}"> <i class="icon-heart">&nbsp;</i> </a> <a href="quick_view.html" class="quickview"> <i class="icon-zoom">&nbsp;</i> </a> </div>
                             </div>
                         </div>
                         <div class="item-info">
@@ -41,13 +41,13 @@
                     <div class="item-inner">
                         <div class="item-img">
                             <div class="product-block">
-                                <div class="product-image"> <a href="product_detail.html">
+                                <div class="product-image"> <a href="{{ url('product/detail' , [rand(1,20)]) }}">
                                         <figure class="product-display">
                                             <div class="new-label new-top-left">New</div>
                                             <img src="{{ asset('uploads/products-images/product2.jpg') }}" class="lazyOwl product-mainpic" alt="product-image" style="display: block;"> <img class="product-secondpic" alt="product-image" src="{{ asset('uploads/products-images/product2.jpg') }}"> </figure>
                                     </a> </div>
                                 <div class="product-meta">
-                                    <div class="product-action"> <a class="addcart" href="shopping_cart.html"> <i class="icon-shopping-cart">&nbsp;</i> Add to cart </a> <a class="wishlist" href="wishlist.html"> <i class="icon-heart">&nbsp;</i> </a> <a href="quick_view.html" class="quickview"> <i class="icon-zoom">&nbsp;</i> </a> </div>
+                                    <div class="product-action"> <a class="addcart" href="shopping_cart.html"> <i class="icon-shopping-cart">&nbsp;</i> Add to cart </a> <a class="wishlist" href="{{ url('/user/wishlist') }}"> <i class="icon-heart">&nbsp;</i> </a> <a href="quick_view.html" class="quickview"> <i class="icon-zoom">&nbsp;</i> </a> </div>
                                 </div>
                             </div>
                         </div>
@@ -78,13 +78,13 @@
                     <div class="item-inner">
                         <div class="item-img">
                             <div class="product-block">
-                                <div class="product-image"> <a href="product_detail.html">
+                                <div class="product-image"> <a href="{{ url('product/detail' , [rand(1,20)]) }}">
                                         <figure class="product-display">
                                             <div class="new-label new-top-left">New</div>
                                             <img src="{{ asset('uploads/products-images/product3.jpg') }}" class="lazyOwl product-mainpic" alt="product-image" style="display: block;"> <img class="product-secondpic" alt="product-image" src="{{ asset('uploads/products-images/product3.jpg') }}"> </figure>
                                     </a> </div>
                                 <div class="product-meta">
-                                    <div class="product-action"> <a class="addcart" href="shopping_cart.html"> <i class="icon-shopping-cart">&nbsp;</i> Add to cart </a> <a class="wishlist" href="wishlist.html"> <i class="icon-heart">&nbsp;</i> </a> <a href="quick_view.html" class="quickview"> <i class="icon-zoom">&nbsp;</i> </a> </div>
+                                    <div class="product-action"> <a class="addcart" href="shopping_cart.html"> <i class="icon-shopping-cart">&nbsp;</i> Add to cart </a> <a class="wishlist" href="{{ url('/user/wishlist') }}"> <i class="icon-heart">&nbsp;</i> </a> <a href="quick_view.html" class="quickview"> <i class="icon-zoom">&nbsp;</i> </a> </div>
                                 </div>
                             </div>
                         </div>
@@ -114,13 +114,13 @@
                 <div class="item">
                     <div class="item-inner">
                         <div class="product-block">
-                            <div class="product-image"> <a href="product_detail.html">
+                            <div class="product-image"> <a href="{{ url('product/detail' , [rand(1,20)]) }}">
                                     <figure class="product-display">
                                         <div class="new-label new-top-left">New</div>
                                         <img src="{{ asset('uploads/products-images/product4.jpg') }}" class="lazyOwl product-mainpic" alt="product-image" style="display: block;"> <img class="product-secondpic" alt="product-image" src="{{ asset('uploads/products-images/product4.jpg') }}"> </figure>
                                 </a> </div>
                             <div class="product-meta">
-                                <div class="product-action"> <a class="addcart" href="shopping_cart.html"> <i class="icon-shopping-cart">&nbsp;</i> Add to cart </a> <a class="wishlist" href="wishlist.html"> <i class="icon-heart">&nbsp;</i> </a> <a href="quick_view.html" class="quickview"> <i class="icon-zoom">&nbsp;</i> </a> </div>
+                                <div class="product-action"> <a class="addcart" href="shopping_cart.html"> <i class="icon-shopping-cart">&nbsp;</i> Add to cart </a> <a class="wishlist" href="{{ url('/user/wishlist') }}"> <i class="icon-heart">&nbsp;</i> </a> <a href="quick_view.html" class="quickview"> <i class="icon-zoom">&nbsp;</i> </a> </div>
                             </div>
                         </div>
                         <div class="item-info">
@@ -149,13 +149,13 @@
                 <div class="item">
                     <div class="item-inner">
                         <div class="product-block">
-                            <div class="product-image"> <a href="product_detail.html">
+                            <div class="product-image"> <a href="{{ url('product/detail' , [rand(1,20)]) }}">
                                     <figure class="product-display">
                                         <div class="sale-label sale-top-left">Sale</div>
                                         <img src="{{ asset('uploads/products-images/product5.jpg') }}" class="lazyOwl product-mainpic" alt="product-image" style="display: block;"> <img class="product-secondpic" alt="product-image" src="{{ asset('uploads/products-images/product5.jpg') }}"> </figure>
                                 </a> </div>
                             <div class="product-meta">
-                                <div class="product-action"> <a class="addcart" href="shopping_cart.html"> <i class="icon-shopping-cart">&nbsp;</i> Add to cart </a> <a class="wishlist" href="wishlist.html"> <i class="icon-heart">&nbsp;</i> </a> <a href="quick_view.html" class="quickview"> <i class="icon-zoom">&nbsp;</i> </a> </div>
+                                <div class="product-action"> <a class="addcart" href="shopping_cart.html"> <i class="icon-shopping-cart">&nbsp;</i> Add to cart </a> <a class="wishlist" href="{{ url('/user/wishlist') }}"> <i class="icon-heart">&nbsp;</i> </a> <a href="quick_view.html" class="quickview"> <i class="icon-zoom">&nbsp;</i> </a> </div>
                             </div>
                         </div>
                         <div class="item-info">
@@ -182,13 +182,13 @@
                     <div class="item-inner">
                         <div class="item-img">
                             <div class="product-block">
-                                <div class="product-image"> <a href="product_detail.html">
+                                <div class="product-image"> <a href="{{ url('product/detail' , [rand(1,20)]) }}">
                                         <figure class="product-display">
                                             <div class="new-label new-top-left">New</div>
                                             <img src="{{ asset('uploads/products-images/product6.jpg') }} " class="lazyOwl product-mainpic" alt="product-image" style="display: block;"> <img class="product-secondpic" alt="product-image" src="{{ asset('uploads/products-images/product6.jpg') }}"> </figure>
                                     </a> </div>
                                 <div class="product-meta">
-                                    <div class="product-action"> <a class="addcart" href="shopping_cart.html"> <i class="icon-shopping-cart">&nbsp;</i> Add to cart </a> <a class="wishlist" href="wishlist.html"> <i class="icon-heart">&nbsp;</i> </a> <a href="quick_view.html" class="quickview"> <i class="icon-zoom">&nbsp;</i> </a> </div>
+                                    <div class="product-action"> <a class="addcart" href="shopping_cart.html"> <i class="icon-shopping-cart">&nbsp;</i> Add to cart </a> <a class="wishlist" href="{{ url('/user/wishlist') }}"> <i class="icon-heart">&nbsp;</i> </a> <a href="quick_view.html" class="quickview"> <i class="icon-zoom">&nbsp;</i> </a> </div>
                                 </div>
                             </div>
                         </div>

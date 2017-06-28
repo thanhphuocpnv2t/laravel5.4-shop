@@ -22,8 +22,8 @@
                     <!-- Header Top Links -->
                     <div class="toplinks">
                         <div class="links">
-                            <div class="myaccount"><a title="My Account" href="login.html"><span class="hidden-xs">My Account</span></a></div>
-                            <div class="wishlist"><a title="My Wishlist" href="wishlist.html"><span class="hidden-xs">Wishlist</span></a></div>
+                            <div class="myaccount"><a title="My Account" href="{{ url('/login') }}"><span class="hidden-xs">My Account</span></a></div>
+                            <div class="wishlist"><a title="My Wishlist" href="{{ url('/user/wishlist') }}"><span class="hidden-xs">Wishlist</span></a></div>
                             <div class="demo"><a href="blog.html" title="Blog"><span class="hidden-xs">Blog</span></a></div>
                             <!-- Header Company -->
                             <div class="dropdown block-company-wrapper hidden-xs"> <a role="button" data-toggle="dropdown" data-target="#" class="dropdown-toggle" href="#"> Company <span class="caret"></span></a>
@@ -37,7 +37,7 @@
                                 </ul>
                             </div>
                             <!-- End Header Company -->
-                            <div class="login"><a href="login.html"><span class="hidden-xs">Log In</span></a></div>
+                            <div class="login"><a href="{{ url('/login') }}"><span class="hidden-xs">Log In</span></a></div>
                         </div>
                     </div>
                     <!-- End Header Top Links -->

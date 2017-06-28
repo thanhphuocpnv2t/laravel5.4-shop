@@ -36,9 +36,9 @@
                         <div class="col-xs-6 col-sm-3 col-md-3 col-lg-4">
                             <ul class="simple-list arrow-list bold-list">
                                 <li><a href="shopping_cart.html">Shopping Cart</a></li>
-                                <li> <a href="login.html">My Account</a>
+                                <li> <a href="{{ url('/login') }}">My Account</a>
                                     <ul>
-                                        <li><a href="login.html">My Account</a></li>
+                                        <li><a href="{{ url('/login') }}">My Account</a></li>
                                         <li><a href="#">Order history</a></li>
                                         <li><a href="#">Advanced search</a></li>
                                         <li><a href="#">Reviews</a></li>

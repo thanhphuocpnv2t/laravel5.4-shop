@@ -26,8 +26,8 @@
                                             </thead>
                                             <tbody>
                                             <tr id="item_31" class="first odd">
-                                                <td class="wishlist-cell0 customer-wishlist-item-image"><a title="Softwear Women's Designer" href="product_detail.html" class="product-image"> <img width="150" alt="Softwear Women's Designer" src="{{ asset('uploads/products-images/product6.jpg') }} "> </a></td>
-                                                <td class="wishlist-cell1 customer-wishlist-item-info"><h3 class="product-name"><a title="Softwear Women's Designer" href="product_detail.html">Sample Product</a></h3>
+                                                <td class="wishlist-cell0 customer-wishlist-item-image"><a title="Softwear Women's Designer" href="{{ url('product/detail' , [rand(1,20)]) }}" class="product-image"> <img width="150" alt="Softwear Women's Designer" src="{{ asset('uploads/products-images/product6.jpg') }} "> </a></td>
+                                                <td class="wishlist-cell1 customer-wishlist-item-info"><h3 class="product-name"><a title="Softwear Women's Designer" href="{{ url('product/detail' , [rand(1,20)]) }}">Sample Product</a></h3>
                                                     <div class="description std">
                                                         <div class="inner">A Black Multi-Coloured Printed Leggings for Women from Softwear.</div>
                                                     </div>
@@ -47,8 +47,8 @@
                                                 <td class="wishlist-cell5 customer-wishlist-item-remove last"><a class="remove-item" title="Clear Cart" onClick="return confirmRemoveWishlistItem();" href="#/wishlist/index/remove/item/31/"><span><span></span></span></a></td>
                                             </tr>
                                             <tr id="item_33" class="odd">
-                                                <td class="wishlist-cell0 customer-wishlist-item-image"><a title="Softwear Women's Designer" href="product_detail.html" class="product-image"> <img width="150" alt="Softwear Women's Designer" src="{{ asset('uploads/products-images/product1.jpg') }}"> </a></td>
-                                                <td class="wishlist-cell1 customer-wishlist-item-info"><h3 class="product-name"><a title="Softwear Women's Designer" href="product_detail.html">Sample Product</a></h3>
+                                                <td class="wishlist-cell0 customer-wishlist-item-image"><a title="Softwear Women's Designer" href="{{ url('product/detail' , [rand(1,20)]) }}" class="product-image"> <img width="150" alt="Softwear Women's Designer" src="{{ asset('uploads/products-images/product1.jpg') }}"> </a></td>
+                                                <td class="wishlist-cell1 customer-wishlist-item-info"><h3 class="product-name"><a title="Softwear Women's Designer" href="{{ url('product/detail' , [rand(1,20)]) }}">Sample Product</a></h3>
                                                     <div class="description std">
                                                         <div class="inner">A Black Multi-Coloured Printed Leggings for Women from Softwear.</div>
                                                     </div>
@@ -68,8 +68,8 @@
                                                 <td class="wishlist-cell5 customer-wishlist-item-remove last"><a class="remove-item" title="Clear Cart" onClick="return confirmRemoveWishlistItem();" href="#/wishlist/index/remove/item/31/"><span><span></span></span></a></td>
                                             </tr>
                                             <tr id="item_32" class="last even">
-                                                <td class="wishlist-cell0 customer-wishlist-item-image"><a title="Slim Fit Casual Shirt" href="product_detail.html" class="product-image"> <img width="150" alt="Slim Fit Casual Shirt" src="{{ asset('uploads/products-images/product25.jpg') }}"> </a></td>
-                                                <td class="wishlist-cell1 customer-wishlist-item-info"><h3 class="product-name"><a title="Slim Fit Casual Shirt" href="product_detail.html">Sample Product</a></h3>
+                                                <td class="wishlist-cell0 customer-wishlist-item-image"><a title="Slim Fit Casual Shirt" href="{{ url('product/detail' , [rand(1,20)]) }}" class="product-image"> <img width="150" alt="Slim Fit Casual Shirt" src="{{ asset('uploads/products-images/product25.jpg') }}"> </a></td>
+                                                <td class="wishlist-cell1 customer-wishlist-item-info"><h3 class="product-name"><a title="Slim Fit Casual Shirt" href="{{ url('product/detail' , [rand(1,20)]) }}">Sample Product</a></h3>
                                                     <div class="description std">
                                                         <div class="inner">Blue colour self design casual shirt.</div>
                                                     </div>

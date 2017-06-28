@@ -25,7 +25,7 @@
                                         <ul class="level0">
                                             <li class="level1 first"><a href="grid.html"><span>Grid</span></a></li>
                                             <li class="level1 nav-10-2"> <a href="list.html"> <span>List</span> </a> </li>
-                                            <li class="level1 nav-10-3"> <a href="product_detail.html"> <span>Product Detail</span> </a> </li>
+                                            <li class="level1 nav-10-3"> <a href="{{ url('product/detail' , [rand(1,20)]) }}"> <span>Product Detail</span> </a> </li>
                                             <li class="level1 nav-10-4"> <a href="shopping_cart.html"> <span>Shopping Cart</span> </a> </li>
                                             <li class="level1 first"><a href="checkout.html"><span>Checkout</span></a>
                                                 <ul class="level2">
@@ -33,7 +33,7 @@
                                                     <li class="level2 nav-2-1-5 last"><a href="checkout_billing_info.html"><span>Checkout Billing Info</span></a></li>
                                                 </ul>
                                             </li>
-                                            <li class="level1 nav-10-4"> <a href="wishlist.html"> <span>Wishlist</span> </a> </li>
+                                            <li class="level1 nav-10-4"> <a href="{{ url('/user/wishlist') }}"> <span>Wishlist</span> </a> </li>
                                             <li class="level1"> <a href="dashboard.html"> <span>Dashboard</span> </a> </li>
                                             <li class="level1"> <a href="multiple_addresses.html"> <span>Multiple Addresses</span> </a> </li>
                                             <li class="level1"> <a href="about_us.html"> <span>About Us</span> </a> </li>
@@ -268,7 +268,7 @@
                     <ul style="display: none;" class="level1">
                         <li class="level1 first"><a href="grid.html"><span>Grid</span></a></li>
                         <li class="level1 nav-10-2"> <a href="list.html"> <span>List</span> </a> </li>
-                        <li class="level1 nav-10-3"> <a href="product_detail.html"> <span>Product Detail</span> </a> </li>
+                        <li class="level1 nav-10-3"> <a href="{{ url('product/detail' , [rand(1,20)]) }}"> <span>Product Detail</span> </a> </li>
                         <li class="level1 nav-10-4"> <a href="shopping_cart.html"> <span>Shopping Cart</span> </a> </li>
                         <li class="level1 first parent"><a href="checkout.html"><span>Checkout</span></a>
                             <ul class="level2">
@@ -276,7 +276,7 @@
                                 <li class="level2 nav-2-1-5 last"><a href="checkout_billing_info.html"><span>Checkout Billing Info</span></a></li>
                             </ul>
                         </li>
-                        <li class="level1 nav-10-4"> <a href="wishlist.html"> <span>Wishlist</span> </a> </li>
+                        <li class="level1 nav-10-4"> <a href="{{ url('/user/wishlist') }}"> <span>Wishlist</span> </a> </li>
                         <li class="level1"> <a href="dashboard.html"> <span>Dashboard</span> </a> </li>
                         <li class="level1"> <a href="multiple_addresses.html"> <span>Multiple Addresses</span> </a> </li>
                         <li class="level1"> <a href="about_us.html"> <span>About Us</span> </a> </li>
