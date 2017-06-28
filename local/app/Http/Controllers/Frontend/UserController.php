@@ -14,4 +14,8 @@ class UserController extends Controller
     public function dashboard(){
         return view('frontend.user.dashboard');
     }
+
+    public function shopping_cart(){
+        return view('frontend.user.shopping_cart');
+    }
 }

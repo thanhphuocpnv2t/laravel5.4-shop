@@ -18,6 +18,7 @@ Route::get('/login', array('as'=> 'login','uses' => 'Frontend\IndexController@lo
 Route::get('/product/detail/{id}', array('as'=> 'detail','uses' => 'Frontend\ProductController@detail'));
 Route::get('/product/compare/{id_1}/{id_2}', array('as'=> 'compare','uses' => 'Frontend\ProductController@compare'));
 Route::get('/user/wishlist', array('as'=> 'wishlist','uses' => 'Frontend\UserController@wishlist'));
+Route::get('/shopping_cart', array('as'=> 'wishlist','uses' => 'Frontend\UserController@shopping_cart'));
 Route::get('/user/dashboard', array('as'=> 'dashboard','uses' => 'Frontend\UserController@dashboard'));
 Route::get('/sitemap', array('as'=> 'sitemap','uses' => 'Frontend\IndexController@sitemap'));
 Route::get('/contact_us', array('as'=> 'contact_us','uses' => 'Frontend\IndexController@contact_us'));
