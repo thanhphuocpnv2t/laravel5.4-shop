@@ -11,8 +11,8 @@ var BlankonApp = function(){
     // =========================================================================
     // SETTINGS APP
     // =========================================================================
-    var globalPluginsPath = '/blankon-fullpack-admin-theme/assets/global/plugins/bower_components',
-        globalDataPath    = '../../../assets/admin/data';
+    var globalPluginsPath = '/local/resources/assets/backend/assets/global/plugins/bower_components',
+        globalDataPath    = '/local/resources/assets/backend/assets/admin/data';
 
     return {
 

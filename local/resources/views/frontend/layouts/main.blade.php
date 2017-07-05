@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <!-- static header -->
 @include('frontend.layouts.static_header')
 <!-- end static header -->

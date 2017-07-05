@@ -7,15 +7,19 @@ use App\Http\Request;
 
 class UserController extends Controller
 {
+    public $title = array('Multi Shop');
     public function wishlist(){
-        return view('frontend.user.wishlist');
+        $this->title[] = 'Wishlist Page'; $title = $this->title;
+        return view('frontend.user.wishlist', compact(['title']));
     }
 
     public function dashboard(){
-        return view('frontend.user.dashboard');
+        $this->title[] = 'Dashboard Page'; $title = $this->title;
+        return view('frontend.user.dashboard', compact(['title']));
     }
 
     public function shopping_cart(){
-        return view('frontend.user.shopping_cart');
+        $this->title[] = 'Shopping Cart Page'; $title = $this->title;
+        return view('frontend.user.shopping_cart', compact(['title']));
     }
 }

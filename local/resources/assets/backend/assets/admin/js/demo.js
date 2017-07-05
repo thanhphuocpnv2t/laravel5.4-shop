@@ -3,7 +3,7 @@ var BlankonDemo = function () {
     // =========================================================================
     // SETTINGS APP
     // =========================================================================
-    var adminCssPath = '../../../assets/admin/css';
+    var adminCssPath = '/local/resources/assets/backend/assets/admin/css';
 
     return {
 

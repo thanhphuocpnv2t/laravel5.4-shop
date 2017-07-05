@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <ul>
-                <li class="home"> <a href="index.html" title="Go to Home Page">Home</a><span>&raquo;</span></li>
+                <li class="home"> <a href="{{ url('/' ) }}" title="Go to Home Page">Home</a><span>&raquo;</span></li>
                 <li class=""> <a href="grid.html" title="Go to Home Page">Women</a><span>&raquo;</span></li>
                 <li class="category13"><strong> Sample Product </strong></li>
             </ul>

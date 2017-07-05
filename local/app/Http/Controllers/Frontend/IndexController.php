@@ -7,31 +7,35 @@ use App\Http\Request;
 
 class IndexController extends Controller
 {
+
+    public $title = array('Multi Shop');
     public function index(){
-        return view('frontend.index.index');
+        $this->title[] = 'Home Page'; $title = $this->title;
+        return view('frontend.index.index', compact(['title']));
     }
 
     public function login(){
-        return view('frontend.index.login');
-    }
-
-    public function contactus(){
-        return view('frontend.index.signin');
+        $this->title[] = 'Login Page'; $title = $this->title;
+        return view('frontend.index.login', compact(['title']));
     }
 
     public function sitemap(){
-        return view('frontend.index.sitemap');
+        $this->title[] = 'Sitemap Page'; $title = $this->title;
+        return view('frontend.index.sitemap', compact(['title']));
     }
 
     public function contact_us(){
-        return view('frontend.index.contact_us');
+        $this->title[] = 'Contact us Page'; $title = $this->title;
+        return view('frontend.index.contact_us', compact(['title']));
     }
 
     public function about_us(){
-        return view('frontend.index.about_us');
+        $this->title[] = 'About us Page'; $title = $this->title;
+        return view('frontend.index.about_us', compact(['title']));
     }
 
     public function delivery(){
-        return view('frontend.index.delivery');
+        $this->title[] = 'Delivery Page'; $title = $this->title;
+        return view('frontend.index.delivery', compact(['title']));
     }
 }

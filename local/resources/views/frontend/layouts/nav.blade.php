@@ -11,14 +11,14 @@
                         </div>
                         <ul style="display:none;" class="submenu">
                             <li>
-                                <ul class="topnav"><li class="level0 nav-6 level-top first parent"> <a class="level-top" href="index.html"> <span>Home</span> </a>
+                                <ul class="topnav"><li class="level0 nav-6 level-top first parent"> <a class="level-top" href="{{ url('/' ) }}"> <span>Home</span> </a>
                                         <ul class="level0">
-                                            <li class="level1"><a href="index.html"><span>Home Version 1</span></a> </li>
-                                            <li class="level1"><a href="http://htmldemo.magikcommerce.com/ecommerce/amaze-html-template/layout-2/red/index.html"><span> Home Version 2</span></a> </li>
-                                            <li class="level1"><a href="http://htmldemo.magikcommerce.com/ecommerce/amaze-html-template/layout-1/aqua/index.html"><span>Aqua</span></a> </li>
-                                            <li class="level1"><a href="http://htmldemo.magikcommerce.com/ecommerce/amaze-html-template/layout-1/orange/index.html"><span>Orange</span></a> </li>
-                                            <li class="level1"><a href="index.html"><span>Red</span></a> </li>
-                                            <li class="level1"><a href="http://htmldemo.magikcommerce.com/ecommerce/amaze-html-template/layout-1/yellow/index.html"><span>Yellow</span></a> </li>
+                                            <li class="level1"><a href="{{ url('/' ) }}"><span>Home Version 1</span></a> </li>
+                                            <li class="level1"><a href="http://htmldemo.magikcommerce.com/ecommerce/amaze-html-template/layout-2/red/{{ url('/' ) }}"><span> Home Version 2</span></a> </li>
+                                            <li class="level1"><a href="http://htmldemo.magikcommerce.com/ecommerce/amaze-html-template/layout-1/aqua/{{ url('/' ) }}"><span>Aqua</span></a> </li>
+                                            <li class="level1"><a href="http://htmldemo.magikcommerce.com/ecommerce/amaze-html-template/layout-1/orange/{{ url('/' ) }}"><span>Orange</span></a> </li>
+                                            <li class="level1"><a href="{{ url('/' ) }}"><span>Red</span></a> </li>
+                                            <li class="level1"><a href="http://htmldemo.magikcommerce.com/ecommerce/amaze-html-template/layout-1/yellow/{{ url('/' ) }}"><span>Yellow</span></a> </li>
                                         </ul>
                                     </li>
                                     <li class="level0 nav-6 level-top first parent"> <a class="level-top" href="#"> <span>Pages</span> </a>
@@ -254,14 +254,14 @@
             </div>
             <!--End mobile-menu -->
             <ul id="nav" class="hidden-xs">
-                <li id="nav-home" class="level0 parent drop-menu active"><a href="index.html"><span>Home</span> </a>
+                <li id="nav-home" class="level0 parent drop-menu active"><a href="{{ url('/' ) }}"><span>Home</span> </a>
                     <ul class="level1" style="display: none;">
-                        <li class="level1 first parent"><a href="index.html"><span> Home Version 1</span></a> </li>
-                        <li class="level1 parent"><a href="http://htmldemo.magikcommerce.com/ecommerce/amaze-html-template/layout-2/red/index.html"><span> Home Version 2</span></a> </li>
-                        <li class="level1 parent"><a href="http://htmldemo.magikcommerce.com/ecommerce/amaze-html-template/layout-1/aqua/index.html"><span>Aqua</span></a> </li>
-                        <li class="level1 parent"><a href="http://htmldemo.magikcommerce.com/ecommerce/amaze-html-template/layout-1/orange/index.html"><span>Orange</span></a> </li>
-                        <li class="level1 parent"><a href="index.html"><span>Red</span></a> </li>
-                        <li class="level1 parent"><a href="http://htmldemo.magikcommerce.com/ecommerce/amaze-html-template/layout-1/yellow/index.html"><span>Yellow</span></a> </li>
+                        <li class="level1 first parent"><a href="{{ url('/' ) }}"><span> Home Version 1</span></a> </li>
+                        <li class="level1 parent"><a href="http://htmldemo.magikcommerce.com/ecommerce/amaze-html-template/layout-2/red/{{ url('/' ) }}"><span> Home Version 2</span></a> </li>
+                        <li class="level1 parent"><a href="http://htmldemo.magikcommerce.com/ecommerce/amaze-html-template/layout-1/aqua/{{ url('/' ) }}"><span>Aqua</span></a> </li>
+                        <li class="level1 parent"><a href="http://htmldemo.magikcommerce.com/ecommerce/amaze-html-template/layout-1/orange/{{ url('/' ) }}"><span>Orange</span></a> </li>
+                        <li class="level1 parent"><a href="{{ url('/' ) }}"><span>Red</span></a> </li>
+                        <li class="level1 parent"><a href="http://htmldemo.magikcommerce.com/ecommerce/amaze-html-template/layout-1/yellow/{{ url('/' ) }}"><span>Yellow</span></a> </li>
                     </ul>
                 </li>
                 <li class="level0 parent drop-menu"><a href="#"><span>Pages</span> </a>

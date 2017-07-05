@@ -37,7 +37,7 @@
             <div class="footer-middle">
                 <div class="col-md-3 col-sm-12 col-xs-12">
                     <div class="footer-column-1">
-                        <div class="footer-logo"><a href="index.html" title="Logo"><img src="{{ asset('uploads/logo/footer-logo.png') }}" alt="logo" ></a></div>
+                        <div class="footer-logo"><a href="{{ url('/' ) }}" title="Logo"><img src="{{ asset('uploads/logo/footer-logo.png') }}" alt="logo" ></a></div>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         <div class="social">
                             <ul class="link">

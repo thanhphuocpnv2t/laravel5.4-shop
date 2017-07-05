@@ -33,4 +33,9 @@ Route::get('/delivery', array('as'=> 'delivery','uses' => 'Frontend\IndexControl
 
 
 /* Back end */
-Route::get('/dashboard', array('as'=> 'dashboard','uses' => 'Backend\AdminController@index'));
+Route::get('/dashboard', array('as'=> 'dashboard', 'uses' => 'Backend\AdminController@index'));
+Route::get('/dashboard/signin', array('as'=> 'dashboard', 'uses' => 'Backend\AdminController@signin'));
+Route::get('/dashboard/lockscreen', array('as'=> 'dashboard', 'uses' => 'Backend\AdminController@lockscreen'));
+Route::get('/dashboard/lost-password', array('as'=> 'admin', 'uses' => 'Backend\IndexController@lostpassword'));
+Route::get('/dashboard/product', array('as'=> 'product', 'uses' => 'Backend\ProductController@index'));
+Route::get('/dashboard/product/add', array('as'=> 'product', 'uses' => 'Backend\ProductController@add'));

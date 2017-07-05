@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-5 col-sm-4 col-md-5">
                 <!-- Header Logo -->
-                <a class="logo" title="Magento Commerce" href="index.html"><img alt="Magento Commerce" src="{{ asset('uploads/logo/logo.png') }}"></a>
+                <a class="logo" title="Magento Commerce" href="{{ url('/' ) }}"><img alt="Magento Commerce" src="{{ asset('uploads/logo/logo.png') }}"></a>
                 <!-- End Header Logo -->
             </div>
             <div class=" col-lg-7 col-sm-8 col-md-7 col-xs-12">

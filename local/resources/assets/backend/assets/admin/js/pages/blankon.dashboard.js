@@ -3,7 +3,7 @@ var BlankonDashboard = function () {
     // =========================================================================
     // SETTINGS APP
     // =========================================================================
-    var globalImgPath = '/blankon-fullpack-admin-theme/img';
+    var globalImgPath = '/local/resources/assets/backend/img';
 
     return {
 
@@ -268,8 +268,8 @@ var BlankonDashboard = function () {
                     keepAliveButton: 'Stay Connected',
                     message: 'Your session will be locked in 2 minute',
                     keepAliveUrl: '#',
-                    logoutUrl: 'page-signin.html',
-                    redirUrl: 'page-lock-screen.html',
+                    logoutUrl: '/dashboard/signin',
+                    redirUrl: '/dashboard/lockscreen',
                     ignoreUserActivity: true,
                     warnAfter: 120000,
                     redirAfter: 240000
