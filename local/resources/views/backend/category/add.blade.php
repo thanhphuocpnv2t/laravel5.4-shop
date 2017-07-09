@@ -38,11 +38,14 @@
                         </div><!-- /.panel-heading -->
                         <div class="panel-body no-padding">
                             <ul>
+                            @if (count($errors) > 0)
                                 @foreach($errors->all() as $error)
-                                    <li>{{ $error }}</li>
+                                    <li style="color:red;text-align: center;list-style: none;">{{ $error }}</li>
                                 @endforeach
+                            @endif
                             </ul>
-                            {!! Form::open(array('url' => '/dashboard/category/add', 'class' => 'form-horizontal mt-10','method'=>'POST')) !!}
+                            {{ csrf_field() }}
+                            {!! Form::open(array('url' => '/dashboard/category', 'class' => 'form-horizontal mt-10','method' => 'POST','action' => '/dashboard/category')) !!}
                                 <div class="form-body">
                                     <div class="form-group">
                                         <?php  echo Form::label('name', 'Name', ['class' => 'col-sm-3 control-label']); ?>
@@ -52,9 +55,15 @@
                                     </div><!-- /.form-group -->
 
                                     <div class="form-group">
-                                        <?php  echo Form::label('parentId', 'Parent ID', ['class' => 'col-sm-3 control-label']); ?>
+                                        <?php  echo Form::label('parent_id', 'Parent ID', ['class' => 'col-sm-3 control-label']); ?>
                                         <div class="col-sm-7">
-                                             <?php echo Form::text('parentId', '', ['class' => 'form-control', 'placeholder' => 'Parent ID']); ?>
+                                            <select name="parent_id" class="form-control">
+                                                    <option value="" disabled="true">Select category</option>
+                                                 @foreach ($Categories as $Category)
+                                                     <option value="{{ $Category->id }}">{{ $Category->name }}
+                                                     </option>
+                                                 @endforeach
+                                            </select>
                                         </div>
                                     </div><!-- /.form-group -->
 

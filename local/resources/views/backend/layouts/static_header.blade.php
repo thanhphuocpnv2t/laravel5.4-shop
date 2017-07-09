@@ -39,6 +39,7 @@
     <link href="{{ asset(config('app.backend_themes').'/assets/admin/css/plugins.css') }}" rel="stylesheet">
     <link href="{{ asset(config('app.backend_themes').'/assets/admin/css/themes/default.theme.css') }}" rel="stylesheet" id="theme">
     <link href="{{ asset(config('app.backend_themes').'/assets/admin/css/custom.css') }}" rel="stylesheet">
+    
     <!--/ END THEME STYLES -->
 
     <!-- START @IE SUPPORT -->

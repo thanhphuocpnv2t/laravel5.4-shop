@@ -43,5 +43,7 @@ Route::get('/dashboard/product/add', array('as'=> 'product', 'uses' => 'Backend\
 Route::get('/dashboard/banner/add', array('as'=> 'banner', 'uses' => 'Backend\BannerController@add'));
 // Categories
 Route::get('/dashboard/category/add', array('as'=>'category','uses'=>'Backend\CategoryController@add'));
+Route::get('/dashboard/category', array('as'=>'category','uses'=>'Backend\CategoryController@index'));
+Route::post('/dashboard/category', array('as'=>'category','uses'=>'Backend\CategoryController@store'));
  
 

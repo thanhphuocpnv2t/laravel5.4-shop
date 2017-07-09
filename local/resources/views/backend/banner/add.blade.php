@@ -42,7 +42,7 @@
                                     <li>{{ $error }}</li>
                                 @endforeach
                             </ul>
-                            {!! Form::open(array('url' => '/dashboard/banner/add', 'class' => 'form-horizontal mt-10')) !!}
+                            {!! Form::open(array('url' => '/dashboard/banner/store', 'class' => 'form-horizontal mt-10')) !!}
                                 <div class="form-body">
                                     <div class="form-group">
                                         <?php  echo Form::label('name', 'Name', ['class' => 'col-sm-3 control-label']); ?>
