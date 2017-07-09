@@ -1,4 +1,5 @@
 @extends('backend.layouts.main')
+@section('title','Category add')
 @section('content')
     <section id="page-content">
         <div class="header-content">
