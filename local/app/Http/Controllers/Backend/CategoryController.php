@@ -7,5 +7,9 @@ use App\Http\Request;
 
 class CategoryController extends Controller
 {
-
+    public $title = array('Dashboard');
+    public function add(){
+        $this->title[] = 'Add Category'; $title = $this->title;
+        return view('backend.category.add', compact(['title']));
+    }
 }
