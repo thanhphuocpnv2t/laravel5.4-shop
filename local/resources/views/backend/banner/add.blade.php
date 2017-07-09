@@ -37,12 +37,12 @@
                             <div class="clearfix"></div>
                         </div><!-- /.panel-heading -->
                         <div class="panel-body no-padding">
-                            <?php
-                            foreach ($errors->all() as $message) {
-                                print_r($message);
-                            }
-                            ?>
-                            <form class="form-horizontal mt-10" action="/dashboard/banner/add">
+                            <ul>
+                                @foreach($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                            {!! Form::open(array('url' => '/dashboard/banner/add', 'class' => 'form-horizontal mt-10')) !!}
                                 <div class="form-body">
                                     <div class="form-group">
                                         <label for="name" class="col-sm-3 control-label">Name</label>
@@ -100,7 +100,7 @@
                                         <button type="submit" class="btn btn-success">Sign in</button>
                                     </div>
                                 </div><!-- /.form-footer -->
-                            </form>
+                            {!! Form::close() !!}
 
                         </div><!-- /.panel-body -->
                     </div><!-- /.panel -->
