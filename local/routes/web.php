@@ -40,4 +40,4 @@ Route::get('/dashboard/lost-password', array('as'=> 'admin', 'uses' => 'Backend\
 Route::get('/dashboard/product', array('as'=> 'product', 'uses' => 'Backend\ProductController@index'));
 Route::get('/dashboard/product/add', array('as'=> 'product', 'uses' => 'Backend\ProductController@add'));
 // Banner
-Route::get('/dashboard/banner/add', array('as'=> 'banner', 'uses' => 'Backend\BannerController@add'));
+Route::post('/dashboard/banner/add', array('as'=> 'banner', 'uses' => 'Backend\BannerController@add'));
