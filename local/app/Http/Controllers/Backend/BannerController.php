@@ -10,6 +10,12 @@ use Illuminate\Http\Request;
 class BannerController extends Controller
 {
     public $title = array('Dashboard');
+
+    public function index(){
+        $this->title[] = 'List Banner'; $title = $this->title;
+        return view('backend.banner.index', compact(['title']));
+    }
+
     public function add(){
         $this->title[] = 'Add Banner'; $title = $this->title;
         return view('backend.banner.add', compact(['title']));

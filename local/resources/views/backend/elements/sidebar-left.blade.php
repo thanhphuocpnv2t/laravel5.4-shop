@@ -39,14 +39,15 @@
                 <span class="selected"></span>
             </a>
             <ul>
-                <li class="active"><a href="dashboard.html">Basic</a></li>
+                <li class="active"><a href="{{ url('/dashboard') }}">E-Commerce</a></li>
+                {{--<li class="active"><a href="dashboard.html">Basic</a></li>
                 <li><a href="dashboard-ecommerce.html">E-Commerce</a></li>
                 <li><a href="dashboard-hr.html">Human resources</a></li>
                 <li><a href="dashboard-investor.html">Investor</a></li>
                 <li><a href="dashboard-marketing-campaign.html">Marketing campaign</a></li>
                 <li><a href="dashboard-projects.html">Projects</a></li>
                 <li><a href="dashboard-real-estate.html">Real estate</a></li>
-                <li><a href="dashboard-retail-analysis.html">Retail analysis</a></li>
+                <li><a href="dashboard-retail-analysis.html">Retail analysis</a></li>--}}
             </ul>
         </li>
         <!--/ End navigation - dashboard -->
@@ -186,10 +187,9 @@
                     <a href="javascript:void(0);">Account <span class="arrow"></span></a>
                     <ul>
                         <li><a href="{{ url('dashboard/signin') }}">Sign In</a></li>
-                        <li><a href="page-signin-type-2.html">Sign In Type 2</a></li>
-                        <li><a href="page-signup.html">Sign Up</a></li>
-                        <li><a href="page-lost-password.html">Lost password</a></li>
-                        <li><a href="page-lock-screen.html">Lock Screen</a></li>
+                        <li><a href="{{ url('dashboard/signup') }}">Sign Up</a></li>
+                        <li><a href="{{ url('/dashboard/lost-password') }}">Lost password</a></li>
+                        <li><a href="{{ url('/dashboard/lockscreen') }}">Lock Screen</a></li>
                     </ul>
                 </li>
             </ul>
@@ -517,7 +517,7 @@
         <a id="setting" class="pull-left" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Setting"><i class="fa fa-cog"></i></a>
         <a id="fullscreen" class="pull-left" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Fullscreen"><i class="fa fa-desktop"></i></a>
         <a id="lock-screen" data-url="{{ url('dashboard/signin') }}" class="pull-left" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Lock Screen"><i class="fa fa-lock"></i></a>
-        <a id="logout" data-url="page-lock-screen.html" class="pull-left" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Logout"><i class="fa fa-power-off"></i></a>
+        <a id="logout" data-url="{{ url('/dashboard/lockscreen') }}" class="pull-left" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Logout"><i class="fa fa-power-off"></i></a>
     </div><!-- /.sidebar-footer -->
     <!--/ End left navigation - footer -->
 

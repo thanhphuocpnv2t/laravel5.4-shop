@@ -8,7 +8,7 @@
                 <ol class="breadcrumb">
                     <li>
                         <i class="fa fa-home"></i>
-                        <a href="dashboard.html">Dashboard</a>
+                        <a href="{{ url('/dashboard') }}">Dashboard</a>
                         <i class="fa fa-angle-right"></i>
                     </li>
                     <li>

@@ -34,7 +34,7 @@
                                                 </ul>
                                             </li>
                                             <li class="level1 nav-10-4"> <a href="{{ url('/user/wishlist') }}"> <span>Wishlist</span> </a> </li>
-                                            <li class="level1"> <a href="dashboard.html"> <span>Dashboard</span> </a> </li>
+                                            <li class="level1"> <a href="{{ url('/dashboard') }}"> <span>Dashboard</span> </a> </li>
                                             <li class="level1"> <a href="multiple_addresses.html"> <span>Multiple Addresses</span> </a> </li>
                                             <li class="level1"> <a href="about_us.html"> <span>About Us</span> </a> </li>
                                             <li class="level1"><a href="compare.html"><span>Compare</span></a> </li>
@@ -277,7 +277,7 @@
                             </ul>
                         </li>
                         <li class="level1 nav-10-4"> <a href="{{ url('/user/wishlist') }}"> <span>Wishlist</span> </a> </li>
-                        <li class="level1"> <a href="dashboard.html"> <span>Dashboard</span> </a> </li>
+                        <li class="level1"> <a href="{{ url('/dashboard') }}"> <span>Dashboard</span> </a> </li>
                         <li class="level1"> <a href="multiple_addresses.html"> <span>Multiple Addresses</span> </a> </li>
                         <li class="level1"> <a href="about_us.html"> <span>About Us</span> </a> </li>
                         <li class="level1"> <a href="compare.html"> <span>Compare</span> </a> </li>

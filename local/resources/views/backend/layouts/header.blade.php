@@ -13,7 +13,7 @@
         <div class="navbar-header">
 
             <!-- Start brand -->
-            <a class="navbar-brand" href="dashboard.html">
+            <a class="navbar-brand" href="{{ url('/dashboard') }}">
                 <img class="logo" src="http://img.djavaui.com/?create=175x50,81B71A?f=ffffff" alt="brand logo">
             </a><!-- /.navbar-brand -->
             <!--/ End brand -->
@@ -308,7 +308,7 @@
                         <li><a href="#"><i class="fa fa-dollar"></i>Earning</a></li>
                         <li><a href="#"><i class="fa fa-download"></i>Withdrawals</a></li>
                         <li class="divider"></li>
-                        <li><a href="{{ url('dashboard/signin') }}"><i class="fa fa-sign-out"></i>Logout</a></li>
+                        <li><a href="{{ url('/dashboard/logout') }}"><i class="fa fa-sign-out"></i>Logout</a></li>
                     </ul>
                     <!--/ End dropdown menu -->
                 </li><!-- /.dropdown navbar-profile -->

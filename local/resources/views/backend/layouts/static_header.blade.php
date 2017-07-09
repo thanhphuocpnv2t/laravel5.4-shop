@@ -28,6 +28,9 @@
     <!-- START @PAGE LEVEL STYLES -->
     <link href="{{ asset(config('app.backend_themes').'/assets/global/plugins/bower_components/fontawesome/css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="{{ asset(config('app.backend_themes').'/assets/global/plugins/bower_components/animate.css/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset(config('app.backend_themes').'/assets/global/plugins/bower_components/datatables/css/dataTables.bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset(config('app.backend_themes').'/assets/global/plugins/bower_components/datatables/css/datatables.responsive.css') }}" rel="stylesheet">
+    <link href="{{ asset(config('app.backend_themes').'/assets/global/plugins/bower_components/fuelux/dist/css/fuelux.min.css') }}" rel="stylesheet">
     <link href="{{ asset(config('app.backend_themes').'/assets/global/plugins/bower_components/dropzone/downloads/css/dropzone.css') }}" rel="stylesheet">
     <link href="{{ asset(config('app.backend_themes').'/assets/global/plugins/bower_components/jquery.gritter/css/jquery.gritter.css') }}" rel="stylesheet">
     <!--/ END PAGE LEVEL STYLES -->
