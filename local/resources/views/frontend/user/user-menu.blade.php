@@ -3,7 +3,7 @@
         <div class="block-title">My Account</div>
         <div class="block-content">
             <ul>
-                <li ><a href="dashboard.html">Account Dashboard</a></li>
+                <li ><a href="{{ url('/dashboard') }}">Account Dashboard</a></li>
                 <li><a href="#customer/account/edit/">Account Information</a></li>
                 <li><a href="#customer/address/">Address Book</a></li>
                 <li><a href="#sales/order/history/">My Orders</a></li>

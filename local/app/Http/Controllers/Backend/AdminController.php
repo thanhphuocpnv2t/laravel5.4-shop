@@ -18,8 +18,17 @@ class AdminController extends Controller
         return view('backend.dashboard.login', compact(['title']));
     }
 
+    public function signup(){
+        $this->title[] = 'Sign Up Page'; $title = $this->title;
+        return view('backend.dashboard.singup', compact(['title']));
+    }
+
     public function lockscreen(){
         $this->title[] = 'Lock Screen Page'; $title = $this->title;
         return view('backend.dashboard.lock-screen', compact(['title']));
+    }
+
+    public function logout(){
+        return redirect('/');
     }
 }
