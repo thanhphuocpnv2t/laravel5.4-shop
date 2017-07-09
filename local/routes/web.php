@@ -46,9 +46,13 @@ Route::get('/dashboard/banner/add', array('as'=> 'banner', 'uses' => 'Backend\Ba
 Route::get('/dashboard/banner', array('as'=> 'banner', 'uses' => 'Backend\BannerController@index'));
 // Categories
 Route::get('/dashboard/category/add', array('as'=>'category','uses'=>'Backend\CategoryController@add'));
+<<<<<<< HEAD
 Route::get('/dashboard/category', array('as'=>'category','uses'=>'Backend\CategoryController@index'));
 Route::post('/dashboard/category', array('as'=>'category','uses'=>'Backend\CategoryController@store'));
 // Route::put('/dashboard/category/{id}/edit', array('as'=>'category','uses'=>'Backend\CategoryController@edit'));
 Route::get('/dashboard/category/show/{id}', array('as'=>'category','uses'=>'Backend\CategoryController@show'));
  
+=======
+
+>>>>>>> parent of a567214... add web
 
