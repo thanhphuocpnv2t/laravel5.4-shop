@@ -38,4 +38,11 @@ class IndexController extends Controller
         $this->title[] = 'Delivery Page'; $title = $this->title;
         return view('frontend.index.delivery', compact(['title']));
     }
+
+    public function register(){
+        $this->title[] = 'Register Page'; $title = $this->title;
+        return view('frontend.index.register', compact(['title']));
+    }
+
+
 }

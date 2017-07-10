@@ -15,6 +15,7 @@
 
 Route::get('/', array('as'=> 'index','uses' => 'Frontend\IndexController@index'));
 Route::get('/login', array('as'=> 'login','uses' => 'Frontend\IndexController@login'));
+Route::get('/register', array('as'=> 'register','uses' => 'Frontend\IndexController@register'));
 Route::get('/product/detail/{id}', array('as'=> 'detail','uses' => 'Frontend\ProductController@detail'));
 Route::get('/product/compare/{id_1}/{id_2}', array('as'=> 'compare','uses' => 'Frontend\ProductController@compare'));
 Route::get('/user/wishlist', array('as'=> 'wishlist','uses' => 'Frontend\UserController@wishlist'));

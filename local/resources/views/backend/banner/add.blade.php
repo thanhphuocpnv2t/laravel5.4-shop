@@ -1,3 +1,6 @@
+<?php
+use App\Banners;
+?>
 @extends('backend.layouts.main')
 @section('content')
     <section id="page-content">
@@ -43,6 +46,7 @@
                                 @endforeach
                             </ul>
                             {!! Form::open(array('url' => '/dashboard/banner/add', 'class' => 'form-horizontal mt-10')) !!}
+                                {{ csrf_field() }}
                                 <div class="form-body">
                                     <div class="form-group">
                                         <?php  echo Form::label('name', 'Name', ['class' => 'col-sm-3 control-label']); ?>
@@ -68,14 +72,14 @@
                                     <div class="form-group">
                                         <?php  echo Form::label('active', 'Active', ['class' => 'col-sm-3 control-label']); ?>
                                         <div class="col-sm-7">
-                                            <?php echo Form::text('active', '', ['class' => 'form-control', 'placeholder' => 'Active']); ?>
+                                            <?php echo Form::select('active',  [ Banners::ACTIVE => 'Active', Banners::INACTIVE => 'In Active'], null ,['class' => 'form-control', 'placeholder' => 'Please chose one']); ?>
                                         </div>
                                     </div><!-- /.form-group -->
 
                                     <div class="form-group">
                                         <?php  echo Form::label('filename', 'Filename', ['class' => 'col-sm-3 control-label']); ?>
                                         <div class="col-sm-7">
-                                            <?php echo Form::text('filename', '', ['class' => 'form-control', 'placeholder' => 'Filename']); ?>
+                                            <?php echo Form::file('filename', ['class' => 'form-control']); ?>
                                         </div>
                                     </div><!-- /.form-group -->
 
