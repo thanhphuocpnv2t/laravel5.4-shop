@@ -1,5 +1,6 @@
 @extends('backend.layouts.main')
-@section('title','View Product')
+@section('title','Category index')
 @section('content')
 
-@stop
+aaa
+@endsection

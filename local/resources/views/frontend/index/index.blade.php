@@ -1,4 +1,5 @@
 @extends('frontend.layouts.main')
+@section('title', 'Home Page')
 @section('content')
 <!-- Slider -->
 @include('frontend.elements.slider-section');

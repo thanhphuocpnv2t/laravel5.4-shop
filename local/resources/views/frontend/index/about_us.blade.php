@@ -1,4 +1,5 @@
 @extends('frontend.layouts.main')
+@section('title', 'About us Page')
 @section('content')
 <!-- Breadcrumbs -->
 <div class="breadcrumbs">

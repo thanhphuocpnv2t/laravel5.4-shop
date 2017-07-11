@@ -1,4 +1,5 @@
 @extends('backend.layouts.main')
+@section('title','Admin Index')
 @section('content')
 <!-- START @PAGE CONTENT -->
 <section id="page-content">

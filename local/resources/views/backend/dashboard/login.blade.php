@@ -1,4 +1,5 @@
 @extends('backend.layouts.dashboard')
+@section('title', 'Sign In Page')
 @section('content')
 <!-- START @SIGN WRAPPER -->
 <div id="sign-wrapper">

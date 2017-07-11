@@ -12,13 +12,11 @@ class BannerController extends Controller
     public $title = array('Dashboard');
 
     public function index(){
-        $this->title[] = 'List Banner'; $title = $this->title;
-        return view('backend.banner.index', compact(['title']));
+        return view('backend.banner.index');
     }
 
     public function add(){
-        $this->title[] = 'Add Banner'; $title = $this->title;
-        return view('backend.banner.add', compact(['title']));
+        return view('backend.banner.add');
     }
 
     public function store(BannerRequest $request)

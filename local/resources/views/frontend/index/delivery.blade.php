@@ -1,4 +1,5 @@
 @extends('frontend.layouts.main')
+@section('title', 'Delivery Page')
 @section('content')
 <section class="main-container col1-layout">
     <div class="main container">

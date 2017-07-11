@@ -2,6 +2,7 @@
 use App\Banners;
 ?>
 @extends('backend.layouts.main')
+@section('title','Add Banner')
 @section('content')
     <section id="page-content">
         <div class="header-content">

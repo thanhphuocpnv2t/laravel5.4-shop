@@ -7,25 +7,20 @@ use App\Http\Request;
 
 class AdminController extends Controller
 {
-    public $title = array('Dashboard');
    public function index(){
-       $this->title[] = 'Admin Index'; $title = $this->title;
-       return view('backend.dashboard.dashboard', compact(['title']));
+       return view('backend.dashboard.dashboard');
    }
 
     public function signin(){
-        $this->title[] = 'Sign In Page'; $title = $this->title;
-        return view('backend.dashboard.login', compact(['title']));
+        return view('backend.dashboard.login');
     }
 
     public function signup(){
-        $this->title[] = 'Sign Up Page'; $title = $this->title;
-        return view('backend.dashboard.singup', compact(['title']));
+        return view('backend.dashboard.singup');
     }
 
     public function lockscreen(){
-        $this->title[] = 'Lock Screen Page'; $title = $this->title;
-        return view('backend.dashboard.lock-screen', compact(['title']));
+        return view('backend.dashboard.lock-screen');
     }
 
     public function logout(){

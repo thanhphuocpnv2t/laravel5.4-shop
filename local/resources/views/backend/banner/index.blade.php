@@ -1,4 +1,5 @@
 @extends('backend.layouts.main')
+@section('title','List Banner')
 @section('content')
     <section id="page-content">
 

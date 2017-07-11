@@ -1,4 +1,5 @@
 @extends('frontend.layouts.main')
+@section('title', 'Wishlist Page')
 @section('content')
     <div class="main-container col2-right-layout">
         <div class="main container">

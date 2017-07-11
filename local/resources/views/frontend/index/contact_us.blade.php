@@ -1,4 +1,5 @@
 @extends('frontend.layouts.main')
+@section('title','Contact us Page')
 @section('content')
     <div class="breadcrumbs">
         <div class="container">
