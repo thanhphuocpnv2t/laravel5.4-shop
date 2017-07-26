@@ -10,13 +10,10 @@ class CategoryController extends Controller
 {
     public function index() {
         return view('backend.category.index');
-        // $Categories = \DB::table('Categories')->get();
-        // return view('backend.category.index');
     }
 
-    public function add() {
+    public function create() {
         $Categories = \DB::table('categories')->get();
-        $this->title[] = 'Add Category'; $title = $this->title;
         return view('backend.category.add', compact('Categories'));
 
     }

@@ -261,7 +261,7 @@ var BlankonDashboard = function () {
         // SESSION TIMEOUT
         // =========================================================================
         sessionTimeout: function () {
-            if($('.demo-dashboard-session').length){
+            /*if($('.demo-dashboard-session').length){
                 $.sessionTimeout({
                     title: 'JUST DEMO Your session is about to expire!',
                     logoutButton: 'Logout',
@@ -274,7 +274,7 @@ var BlankonDashboard = function () {
                     warnAfter: 120000,
                     redirAfter: 240000
                 });
-            }
+            }*/
         },
 
         // =========================================================================

@@ -46,7 +46,7 @@ use App\Banners;
                                     <li>{{ $error }}</li>
                                 @endforeach
                             </ul>
-                            {!! Form::open(array('url' => '/dashboard/banner/add', 'class' => 'form-horizontal mt-10')) !!}
+                            {!! Form::open(array('url' => '/dashboard/banner', 'method' => 'POST', 'enctype' => 'multipart/form-data', 'class' => 'form-horizontal mt-10')) !!}
                                 {{ csrf_field() }}
                                 <div class="form-body">
                                     <div class="form-group">
@@ -57,23 +57,16 @@ use App\Banners;
                                     </div><!-- /.form-group -->
 
                                     <div class="form-group">
-                                        <?php  echo Form::label('position', 'Position', ['class' => 'col-sm-3 control-label']); ?>
-                                        <div class="col-sm-7">
-                                            <?php echo Form::text('position', '', ['class' => 'form-control', 'placeholder' => 'Position']); ?>
-                                        </div>
-                                    </div><!-- /.form-group -->
-
-                                    <div class="form-group">
                                         <?php  echo Form::label('type', 'Type', ['class' => 'col-sm-3 control-label']); ?>
                                         <div class="col-sm-7">
-                                            <?php echo Form::text('type', '', ['class' => 'form-control', 'placeholder' => 'Type']); ?>
+                                            <?php echo Form::select('type', [1 =>1, 2 => 2], null, ['class' => 'form-control', 'placeholder' => 'Type']); ?>
                                         </div>
                                     </div><!-- /.form-group -->
 
                                     <div class="form-group">
-                                        <?php  echo Form::label('active', 'Active', ['class' => 'col-sm-3 control-label']); ?>
+                                        <?php  echo Form::label('is_active', 'Active', ['class' => 'col-sm-3 control-label']); ?>
                                         <div class="col-sm-7">
-                                            <?php echo Form::select('active',  [ Banners::ACTIVE => 'Active', Banners::INACTIVE => 'In Active'], null ,['class' => 'form-control', 'placeholder' => 'Please chose one']); ?>
+                                            <?php echo Form::select('is_active',  [ Banners::ACTIVE => 'Active', Banners::INACTIVE => 'In Active'], null ,['class' => 'form-control', 'placeholder' => 'Please chose one']); ?>
                                         </div>
                                     </div><!-- /.form-group -->
 
@@ -81,20 +74,6 @@ use App\Banners;
                                         <?php  echo Form::label('filename', 'Filename', ['class' => 'col-sm-3 control-label']); ?>
                                         <div class="col-sm-7">
                                             <?php echo Form::file('filename', ['class' => 'form-control']); ?>
-                                        </div>
-                                    </div><!-- /.form-group -->
-
-                                    <div class="form-group">
-                                        <?php  echo Form::label('content', 'Content', ['class' => 'col-sm-3 control-label']); ?>
-                                        <div class="col-sm-7">
-                                            <?php echo Form::text('content', '', ['class' => 'form-control', 'placeholder' => 'Content']); ?>
-                                        </div>
-                                    </div><!-- /.form-group -->
-
-                                    <div class="form-group">
-                                        <?php  echo Form::label('link', 'Link', ['class' => 'col-sm-3 control-label']); ?>
-                                        <div class="col-sm-7">
-                                            <?php echo Form::text('link', '', ['class' => 'form-control', 'placeholder' => 'Link']); ?>
                                         </div>
                                     </div><!-- /.form-group -->
 

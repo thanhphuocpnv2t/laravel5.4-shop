@@ -45,8 +45,8 @@
                                 @endforeach
                             @endif
                             </ul>
-                            {{ csrf_field() }}
-                            {!! Form::open(array('url' => '/dashboard/category', 'class' => 'form-horizontal mt-10','method' => 'POST','action' => '/dashboard/category')) !!}
+                            {!! Form::open(array('url' => '/dashboard/category', 'class' => 'form-horizontal mt-10','method' => 'POST')) !!}
+                                {{ csrf_field() }}
                                 <div class="form-body">
                                     <div class="form-group">
                                         <?php  echo Form::label('name', 'Name', ['class' => 'col-sm-3 control-label']); ?>
