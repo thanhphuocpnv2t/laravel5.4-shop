@@ -40,7 +40,6 @@ class BannerController extends Controller
         $model = new Banner();
         $this->validate($request, [
             'name' => 'required|max:255',
-            'type' => 'required',
             'is_active' => 'required',
             'filename' => 'required|image|mimes:jpeg,bmp,png'
         ]);
@@ -52,7 +51,6 @@ class BannerController extends Controller
 
         $model->name = $request->name;
         $model->position = 1;
-        $model->type = $request->type;
         $model->is_active = $request->is_active;
         $model->filename = $filename;
         if ($model->save()) {

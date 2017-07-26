@@ -41,11 +41,15 @@ use App\Banners;
                             <div class="clearfix"></div>
                         </div><!-- /.panel-heading -->
                         <div class="panel-body no-padding">
-                            <ul>
-                                @foreach($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                    @foreach($errors->all() as $error)
+                                        <div class="alert alert-danger">{{ $error }}</div>
+                                    @endforeach
+                                    </div>
+                                </div>
+                            </div>
                             {!! Form::open(array('url' => '/dashboard/banner', 'method' => 'POST', 'enctype' => 'multipart/form-data', 'class' => 'form-horizontal mt-10')) !!}
                                 {{ csrf_field() }}
                                 <div class="form-body">
@@ -53,13 +57,6 @@ use App\Banners;
                                         <?php  echo Form::label('name', 'Name', ['class' => 'col-sm-3 control-label']); ?>
                                         <div class="col-sm-7">
                                             <?php echo Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Name']); ?>
-                                        </div>
-                                    </div><!-- /.form-group -->
-
-                                    <div class="form-group">
-                                        <?php  echo Form::label('type', 'Type', ['class' => 'col-sm-3 control-label']); ?>
-                                        <div class="col-sm-7">
-                                            <?php echo Form::select('type', [1 =>1, 2 => 2], null, ['class' => 'form-control', 'placeholder' => 'Type']); ?>
                                         </div>
                                     </div><!-- /.form-group -->
 
