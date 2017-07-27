@@ -9,7 +9,8 @@ use App\Category;
 class CategoryController extends Controller
 {
     public function index() {
-        return view('backend.category.index');
+        $Categories = \DB::table('categories')->get();
+        return view('backend.category.index', compact('Categories'));
     }
 
     public function create() {
@@ -44,7 +45,9 @@ class CategoryController extends Controller
     }
 
 
-    public function edit(Request $request, $id) {
-
+    public function edit($id) {
+       $Categories = Category::find($id);
+       $Categories_parent = \DB::table('categories')->get();
+        return view('backend.category.edit', compact('Categories','Categories_parent'));
     }
 }

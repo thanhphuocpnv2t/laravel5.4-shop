@@ -1,9 +1,9 @@
 @extends('backend.layouts.main')
-@section('title','Category add')
+@section('title','Category edit')
 @section('content')
     <section id="page-content">
         <div class="header-content">
-            <h2><i class="fa fa-list-alt"></i> Form Layouts <span>variant form layouts</span></h2>
+            <h2><i class="fa fa-list-alt"></i> Edit <span>category</span></h2>
             <div class="breadcrumb-wrapper hidden-xs">
                 <span class="label">You are here:</span>
                 <ol class="breadcrumb">
@@ -13,10 +13,10 @@
                         <i class="fa fa-angle-right"></i>
                     </li>
                     <li>
-                        <a href="#">Forms</a>
+                        <a href="#">Category</a>
                         <i class="fa fa-angle-right"></i>
                     </li>
-                    <li class="active">Form Layouts</li>
+                    <li class="active">Edit</li>
                 </ol>
             </div><!-- /.breadcrumb-wrapper -->
         </div>
@@ -29,7 +29,7 @@
                     <div class="panel rounded shadow">
                         <div class="panel-heading">
                             <div class="pull-left">
-                                <h3 class="panel-title">Horizontal Form <code>.form-horizontal</code></h3>
+                                <h3 class="panel-title">Edit category Form <code>category item</code></h3>
                             </div>
                             <div class="pull-right">
                                 <button class="btn btn-sm" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse" data-original-title="" title=""><i class="fa fa-angle-up"></i></button>
@@ -41,9 +41,7 @@
                             <div class="panel-body">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        @foreach($errors->all() as $error)
-                                            <div class="alert alert-danger">{{ $error }}</div>
-                                        @endforeach
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -53,7 +51,7 @@
                                     <div class="form-group">
                                         <?php  echo Form::label('name', 'Name', ['class' => 'col-sm-3 control-label']); ?>
                                         <div class="col-sm-7">
-                                             <?php echo Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Name']); ?>
+                                             <input type="text" class="form-control" value="{{ $Categories->name }}" name="name" id="name" placeholder="Input field">
                                         </div>
                                     </div><!-- /.form-group -->
 
@@ -63,7 +61,7 @@
                                             <select name="parent_id" class="form-control">
                                                     <option value="" disabled="true">Select category</option>
                                                      <option value="0" >No parent</option>
-                                                 @foreach ($Categories as $Category)
+                                                 @foreach ($Categories_parent as $Category)
                                                      <option value="{{ $Category->id }}">{{ $Category->name }}
                                                      </option>
                                                  @endforeach
@@ -74,14 +72,14 @@
                                     <div class="form-group">
                                         <?php  echo Form::label('alias', 'Alias', ['class' => 'col-sm-3 control-label']); ?>
                                         <div class="col-sm-7">
-                                             <?php echo Form::text('alias', '', ['class' => 'form-control', 'placeholder' => 'Alias']); ?>
+                                             <input type="text" class="form-control" value="{{ $Categories->alias }}" name="name" id="name" placeholder="Input field">
                                         </div>
                                     </div><!-- /.form-group -->
 
                                 </div><!-- /.form-body -->
                                 <div class="form-footer">
                                     <div class="col-sm-offset-3">
-                                        <?php echo Form::button('Create', ['type' => 'submit', 'class' => 'btn btn-success']); ?>
+                                        <?php echo Form::button('Edit', ['type' => 'submit', 'class' => 'btn btn-success']); ?>
                                     </div>
                                 </div><!-- /.form-footer -->
                             {!! Form::close() !!}

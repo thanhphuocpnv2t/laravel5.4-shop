@@ -50,10 +50,11 @@ Route::get('/dashboard/product/create', array('as'=> 'product', 'uses' => 'Backe
 Route::get('/dashboard/banner/create', array('as'=> 'banner', 'uses' => 'Backend\BannerController@create'));
 Route::post('/dashboard/banner', array('as'=> 'banner', 'uses' => 'Backend\BannerController@store'));
 Route::get('/dashboard/banner', array('as'=> 'banner', 'uses' => 'Backend\BannerController@index'));
+
 // Categories
 Route::get('/dashboard/category/create', array('as'=>'category','uses'=>'Backend\CategoryController@create'));
 Route::get('/dashboard/category', array('as'=>'category','uses'=>'Backend\CategoryController@index'));
 Route::post('/dashboard/category', array('as'=>'category','uses'=>'Backend\CategoryController@store'));
-Route::put('/dashboard/category/edit/{id}', array('as'=>'category','uses'=>'Backend\CategoryController@edit'));
-Route::get('/dashboard/category/view/{id}', array('as'=>'category','uses'=>'Backend\CategoryController@view'));
+Route::get('/dashboard/category/{id}/edit', array('as'=>'category','uses'=>'Backend\CategoryController@edit'));
+Route::get('/dashboard/category/show/{id}', array('as'=>'category','uses'=>'Backend\CategoryController@show'));
 
