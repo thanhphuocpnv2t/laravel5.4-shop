@@ -1,5 +1,5 @@
 <?php
-use App\Banners;
+use App\Banner;
 ?>
 @extends('backend.layouts.main')
 @section('title','Add Banner')
@@ -63,7 +63,7 @@ use App\Banners;
                                     <div class="form-group">
                                         <?php  echo Form::label('is_active', 'Active', ['class' => 'col-sm-3 control-label']); ?>
                                         <div class="col-sm-7">
-                                            <?php echo Form::select('is_active',  [ Banners::ACTIVE => 'Active', Banners::INACTIVE => 'In Active'], null ,['class' => 'form-control', 'placeholder' => 'Please chose one']); ?>
+                                            <?php echo Form::select('is_active',  [ Banner::ACTIVE => 'Active', Banner::INACTIVE => 'In Active'], null ,['class' => 'form-control', 'placeholder' => 'Please chose one']); ?>
                                         </div>
                                     </div><!-- /.form-group -->
 

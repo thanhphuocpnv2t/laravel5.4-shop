@@ -38,13 +38,15 @@
                             <div class="clearfix"></div>
                         </div><!-- /.panel-heading -->
                         <div class="panel-body no-padding">
-                            <ul>
-                            @if (count($errors) > 0)
-                                @foreach($errors->all() as $error)
-                                    <li style="color:red;text-align: center;list-style: none;">{{ $error }}</li>
-                                @endforeach
-                            @endif
-                            </ul>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        @foreach($errors->all() as $error)
+                                            <div class="alert alert-danger">{{ $error }}</div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            </div>
                             {!! Form::open(array('url' => '/dashboard/category', 'class' => 'form-horizontal mt-10','method' => 'POST')) !!}
                                 {{ csrf_field() }}
                                 <div class="form-body">

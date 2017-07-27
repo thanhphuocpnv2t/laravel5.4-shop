@@ -6,6 +6,7 @@ use App\Banner;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Image;
+use Illuminate\Support\Facades\DB;
 
 class BannerController extends Controller
 {
@@ -16,7 +17,8 @@ class BannerController extends Controller
      */
     public function index()
     {
-        return view('backend.banner.index');
+        $banners = Banner::all();
+        return view('backend.banner.index', compact('banners'));
     }
 
     /**
@@ -45,12 +47,12 @@ class BannerController extends Controller
         ]);
         if($request->hasFile('filename')) {
             $image = $request->file('filename');
-            $filename = time() . '.' . $image->getClientOriginalExtension();
-            Image::make($image)->save(public_path('../../uploads/banner/' . $filename));
+            $filename = rand(1000, 999999) .'_'. time() . '.' . $image->getClientOriginalExtension();
+            Image::make($image)->save(public_path('../../uploads/offer-banner/' . $filename));
         }
 
         $model->name = $request->name;
-        $model->position = 1;
+        $model->position = DB::table('banners')->max('position') + 1;
         $model->is_active = $request->is_active;
         $model->filename = $filename;
         if ($model->save()) {

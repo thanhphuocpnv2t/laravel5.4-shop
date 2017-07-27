@@ -324,11 +324,8 @@ class ComposerStaticInitdf893b05de8b932167b3707b42b683a3
     );
 
     public static $classMap = array (
-        'AddFkToOrderItemsTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_26_155006_add_fk_to_order_items_table.php',
         'App\\Banner' => __DIR__ . '/../..' . '/app/Banner.php',
-        'App\\Banners' => __DIR__ . '/../..' . '/app/Banners.php',
         'App\\Blog' => __DIR__ . '/../..' . '/app/Blog.php',
-        'App\\Blogs' => __DIR__ . '/../..' . '/app/Blogs.php',
         'App\\Category' => __DIR__ . '/../..' . '/app/Category.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Contactus' => __DIR__ . '/../..' . '/app/Contactus.php',
