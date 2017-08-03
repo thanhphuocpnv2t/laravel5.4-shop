@@ -17,8 +17,8 @@ class BannerController extends Controller
      */
     public function index()
     {
-        $banners = Banner::all();
-        return view('backend.banner.index', compact('banners'));
+        $banners = DB::table('banners')->paginate(10);
+        return view('backend.banner.index', ['banners' => $banners]);
     }
 
     /**
@@ -40,11 +40,13 @@ class BannerController extends Controller
     public function store(Request $request)
     {
         $model = new Banner();
+
         $this->validate($request, [
             'name' => 'required|max:255',
             'is_active' => 'required',
-            'filename' => 'required|image|mimes:jpeg,bmp,png'
+            'filename' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
         ]);
+
         if($request->hasFile('filename')) {
             $image = $request->file('filename');
             $filename = rand(1000, 999999) .'_'. time() . '.' . $image->getClientOriginalExtension();
@@ -66,9 +68,10 @@ class BannerController extends Controller
      * @param  \App\Banner  $banner
      * @return \Illuminate\Http\Response
      */
-    public function show(Banner $banner)
+    public function show($id)
     {
-        //
+        $model = Banner::find($id);
+        return view('backend.banner.show', compact('model'));
     }
 
     /**
@@ -77,9 +80,10 @@ class BannerController extends Controller
      * @param  \App\Banner  $banner
      * @return \Illuminate\Http\Response
      */
-    public function edit(Banner $banner)
+    public function edit($id)
     {
-        //
+        $model = Banner::find($id);
+        return view('backend.banner.edit', ['model' =>$model]);
     }
 
     /**
@@ -89,9 +93,30 @@ class BannerController extends Controller
      * @param  \App\Banner  $banner
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Banner $banner)
+    public function update(Request $request, $id)
     {
-        //
+        $model = Banner::find($id);
+
+        $this->validate($request, [
+            'name' => 'required|max:255',
+            'is_active' => 'required',
+        ]);
+
+        if($request->hasFile('filename')) {
+            $image = $request->file('filename');
+            $filename = rand(1000, 999999) .'_'. time() . '.' . $image->getClientOriginalExtension();
+            Image::make($image)->save(public_path('../../uploads/offer-banner/' . $filename));
+        }else{
+            $filename = $model->filename;
+        }
+
+        $model->name = $request->name;
+        $model->position = DB::table('banners')->max('position') + 1;
+        $model->is_active = $request->is_active;
+        $model->filename = $filename;
+        if ($model->update()) {
+            return redirect("/dashboard/banner");
+        }
     }
 
     /**
@@ -100,8 +125,8 @@ class BannerController extends Controller
      * @param  \App\Banner  $banner
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Banner $banner)
+    public function delete($id)
     {
-        //
+        Banner::find($id)->delete();
     }
 }

@@ -93,4 +93,7 @@
                 </div>
             </div>
         </div>
+
+        @include('backend.layouts.footer-bottom')
+    </section>
 @endsection

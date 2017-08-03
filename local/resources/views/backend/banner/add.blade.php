@@ -90,5 +90,7 @@ use App\Banner;
                 </div>
             </div>
         </div>
+
+        @include('backend.layouts.footer-bottom')
     </section>
 @stop

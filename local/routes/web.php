@@ -42,6 +42,7 @@ Route::get('/dashboard/lockscreen', array('as'=> 'dashboard', 'uses' => 'Backend
 Route::get('/dashboard/lost-password', array('as'=> 'admin', 'uses' => 'Backend\IndexController@lostpassword'));
 Route::get('/dashboard/dashboard/signin', array('as'=> 'signin', 'uses' => 'Backend\AdminController@signin'));
 Route::get('/dashboard/dashboard/lockscreen', array('as'=> 'lockscreen', 'uses' => 'Backend\AdminController@lockscreen'));
+
 //Product
 Route::get('/dashboard/product', array('as'=> 'product', 'uses' => 'Backend\ProductController@index'));
 Route::get('/dashboard/product/create', array('as'=> 'product', 'uses' => 'Backend\ProductController@create'));
@@ -50,11 +51,15 @@ Route::get('/dashboard/product/create', array('as'=> 'product', 'uses' => 'Backe
 Route::get('/dashboard/banner/create', array('as'=> 'banner', 'uses' => 'Backend\BannerController@create'));
 Route::post('/dashboard/banner', array('as'=> 'banner', 'uses' => 'Backend\BannerController@store'));
 Route::get('/dashboard/banner', array('as'=> 'banner', 'uses' => 'Backend\BannerController@index'));
+Route::get('/dashboard/banner/edit/{id}', array('as'=> 'banner', 'uses' => 'Backend\BannerController@edit'));
+Route::post('/dashboard/banner/update/{id}', array('as'=> 'banner', 'uses' => 'Backend\BannerController@update'));
+Route::get('/dashboard/banner/show/{id}', array('as'=> 'banner', 'uses' => 'Backend\BannerController@show'));
+Route::delete('/dashboard/banner/delete/{id}', array('as'=> 'banner', 'uses' => 'Backend\BannerController@delete'));
 
 // Categories
 Route::get('/dashboard/category/create', array('as'=>'category','uses'=>'Backend\CategoryController@create'));
 Route::get('/dashboard/category', array('as'=>'category','uses'=>'Backend\CategoryController@index'));
 Route::post('/dashboard/category', array('as'=>'category','uses'=>'Backend\CategoryController@store'));
-Route::get('/dashboard/category/{id}/edit', array('as'=>'category','uses'=>'Backend\CategoryController@edit'));
+Route::get('/dashboard/category/edit/{id}', array('as'=>'category','uses'=>'Backend\CategoryController@edit'));
 Route::get('/dashboard/category/show/{id}', array('as'=>'category','uses'=>'Backend\CategoryController@show'));
 

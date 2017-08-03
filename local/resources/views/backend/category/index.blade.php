@@ -3,7 +3,7 @@
 @section('content')
     <section id="page-content">
         <div class="header-content">
-            <h2><i class="fa fa-list-alt"></i>  Show <span>category detail</span></h2>
+            <h2><i class="fa fa-list-alt"></i>  Category List</h2>
             <div class="breadcrumb-wrapper hidden-xs">
                 <span class="label">You are here:</span>
                 <ol class="breadcrumb">
@@ -28,7 +28,7 @@
 	                    <div class="panel">
 	                        <div class="panel-heading">
 	                            <div class="pull-left">
-	                                <h3 class="panel-title">Category</h3>
+									<h3 class="panel-title">Category List</h3>
 	                            </div>
 	                            <div class="pull-right">
 	                                <div class="dropdown">
@@ -81,22 +81,23 @@
 	                                    </tr>
 	                                    </thead>
 	                                    <tbody>
-		                                    @foreach($Categories as $Category)
-		                                    <tr>
-		                                        <td class="text-center border-right">{{ $Category->id }}</td>
-		                                        <td>
-		                                            <span>{{ $Category->name }}</span>
-		                                        </td>
-		                                        <td>{{ $Category->alias }}</td>
-
-		                                     	<!-- Action edit delete -->
-		                                        <td class="text-center">
-		                                            <a href="category/show/{{ $Category->id }}" class="btn btn-success btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="View detail"><i class="fa fa-eye"></i></a>
-		                                            <a href="category/{{ $Category->id }}/edit" class="btn btn-primary btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
-		                                            <a href="#" class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><i class="fa fa-times"></i></a>
-		                                        </td>
-		                                    </tr>
-		                                    @endforeach
+											@if(0 < count($Categories))
+												@foreach($Categories as $Category)
+												<tr>
+													<td class="text-center border-right">{{ $Category->id }}</td>
+													<td>
+														<span>{{ $Category->name }}</span>
+													</td>
+													<td>{{ $Category->alias }}</td>
+													<!-- Action edit delete -->
+													<td class="text-center">
+														<a href="category/show/{{ $Category->id }}" class="btn btn-success btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="View detail"><i class="fa fa-eye"></i></a>
+														<a href="category/edit/{{ $Category->id }}" class="btn btn-primary btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
+														<a href="#" class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><i class="fa fa-times"></i></a>
+													</td>
+												</tr>
+												@endforeach
+											@endif
 	                                    </tbody>
 	                                </table>
 	                            </div><!-- /.table-responsive -->
@@ -106,5 +107,8 @@
                 </div>
             </div>
         </div>
+
+		@include('backend.layouts.footer-bottom')
+
     </section>
 @endsection

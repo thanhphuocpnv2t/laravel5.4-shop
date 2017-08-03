@@ -44,7 +44,7 @@
     <link href="{{ asset(config('app.backend_themes').'/assets/admin/css/custom.css') }}" rel="stylesheet">
     
     <!--/ END THEME STYLES -->
-
+    <script src="{{ asset(config('app.backend_themes').'/assets/global/plugins/bower_components/jquery/dist/jquery.min.js') }}"></script>
     <!-- START @IE SUPPORT -->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

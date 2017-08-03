@@ -3,17 +3,17 @@
 @section('content')
     <section id="page-content">
         <div class="header-content">
-            <h2><i class="fa fa-list-alt"></i> Edit <span>category</span></h2>
+            <h2><i class="fa fa-list-alt"></i> Category <span>edit</span></h2>
             <div class="breadcrumb-wrapper hidden-xs">
                 <span class="label">You are here:</span>
                 <ol class="breadcrumb">
                     <li>
                         <i class="fa fa-home"></i>
-                        <a href="dashboard.html">Dashboard</a>
+                        <a href="{{ url('/dashboard') }}">Dashboard</a>
                         <i class="fa fa-angle-right"></i>
                     </li>
                     <li>
-                        <a href="#">Category</a>
+                        <a href="{{ url('/dashboard/category') }}">Category</a>
                         <i class="fa fa-angle-right"></i>
                     </li>
                     <li class="active">Edit</li>
@@ -29,7 +29,7 @@
                     <div class="panel rounded shadow">
                         <div class="panel-heading">
                             <div class="pull-left">
-                                <h3 class="panel-title">Edit category Form <code>category item</code></h3>
+                                <h3 class="panel-title">Category <code>edit</code></h3>
                             </div>
                             <div class="pull-right">
                                 <button class="btn btn-sm" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse" data-original-title="" title=""><i class="fa fa-angle-up"></i></button>
@@ -41,7 +41,9 @@
                             <div class="panel-body">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        
+                                        @foreach($errors->all() as $error)
+                                            <div class="alert alert-danger">{{ $error }}</div>
+                                        @endforeach
                                     </div>
                                 </div>
                             </div>
@@ -91,4 +93,8 @@
                 </div>
             </div>
         </div>
+
+        @include('backend.layouts.footer-bottom')
+
+    </section>
 @endsection

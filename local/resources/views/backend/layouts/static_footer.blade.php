@@ -1,6 +1,5 @@
 <!-- START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time) -->
 <!-- START @CORE PLUGINS -->
-<script src="{{ asset(config('app.backend_themes').'/assets/global/plugins/bower_components/jquery/dist/jquery.min.js') }}"></script>
 <script src="{{ asset(config('app.backend_themes').'/assets/global/plugins/bower_components/jquery-cookie/jquery.cookie.js') }}"></script>
 <script src="{{ asset(config('app.backend_themes').'/assets/global/plugins/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset(config('app.backend_themes').'/assets/global/plugins/bower_components/typehead.js/dist/handlebars.js') }}"></script>
